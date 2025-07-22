@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Reserva - Hotel Vacacional Tropical</title>
+    <link rel="stylesheet" href="Estilo_PBL.css">
+</head>
+<body>
+
+<header>
+    <h1>Hotel Vacacional Tropical</h1>
+    <p>¡Reserva tu estancia en nuestro paraíso tropical y disfruta de unas vacaciones inolvidables!</p>
+
+    <nav class="barra-navegacion">
+        <ul>
+             <li><a href="Habitaciones_PBL.html">Detalles Habitación</a></li>
+            <li><a href="Sedes_PBL.html">Detalles Sedes</a></li>
+            <li><a href="Reservas_PBL.html">Reservas</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section>
+    <h2>Formulario de Reserva</h2>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend><strong>Información Personal</strong></legend>
+
+            <label for="nombre">Nombre Completo:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="correo">Correo Electrónico:</label><br>
+            <input type="email" id="correo" name="correo" required><br><br>
+
+            <label for="telefono">Teléfono:</label><br>
+            <input type="tel" id="telefono" name="telefono" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend><strong>Fechas de Estancia</strong></legend>
+
+            <label for="ingreso">Fecha de Ingreso:</label><br>
+            <input type="date" id="ingreso" name="ingreso" required><br><br>
+
+            <label for="salida">Fecha de Salida:</label><br>
+            <input type="date" id="salida" name="salida" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend><strong>Selección de Habitación</strong></legend>
+
+            <label for="habitacion">Tipo de habitación:</label><br>
+            <select id="habitacion" name="habitacion" required>
+                <option value="">Selecciona una opción</option>
+                <option value="individual">Habitación Individual - $50 por noche</option>
+                <option value="doble">Habitación Doble - $80 por noche</option>
+                <option value="suite">Suite de Lujo - $150 por noche</option>
+            </select><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend><strong>Oferta Especial</strong></legend>
+
+            <label for="oferta">Selecciona una oferta (opcional):</label><br>
+            <select id="oferta" name="oferta">
+                <option value="ninguna">Ninguna</option>
+                <option value="parejas">Aventura Tropical para Parejas - $299</option>
+                <option value="familia">Vacaciones Familiares - $599 / 3 noches</option>
+                <option value="todo-incluido">Todo Incluido - $799 / 5 noches</option>
+            </select><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend><strong>Selección de Sede</strong></legend>
+
+            <label for="sede">Elige la sede:</label><br>
+            <select id="sede" name="sede" required>
+                <option value="">Selecciona una sede</option>
+                <option value="la-ceiba">La Ceiba</option>
+                <option value="tela">Tela</option>
+                <option value="roatan">Roatán</option>
+            </select><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend><strong>Comentarios Adicionales</strong></legend>
+
+            <label for="comentarios">¿Tienes alguna solicitud especial o comentario?</label><br>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+        </fieldset>
+
+        <input type="submit" class="button" value="Enviar Reserva">
+        <a href="Index_PBL.html" class="button">Volver a la página principal</a>
+    </form>
+</section>
+
+<footer>
+    <p>HOTEL TROPICAL VACACIONAL</p>
+</footer>
+
+</body>
+</html>
